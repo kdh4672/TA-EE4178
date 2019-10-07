@@ -1,4 +1,4 @@
-# EE 4178 (2019 Fall)
+## EE 4178 (2019 Fall)
 
 Introduction to Artificial Intelligence(Deep Learning)
 
