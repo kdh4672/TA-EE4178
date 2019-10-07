@@ -14,7 +14,7 @@
 
 ### 1. Basics
 
-* [PyTorch 개론 (+Google Colab 사용법)](
+* [PyTorch 개론 (+Google Colab 사용법)](https://github.com/gamchanr/TA-EE4178/tree/master/01-basics/intro_pytorch)
 * Fully Connected Layer - 간단한 Classification 모델 만들기 (XOR)
 * Fully Connected Layer - Multi-class Classification 모델 만들기 (MNIST)
 * Fully Connected Layer - 간단한 Regression 모델 만들기 (Boston Housing Price)
