@@ -6,7 +6,7 @@
 * 실습환경:
   * 언어: Python 3.6 (Python 3.5+) | [[점프 투 파이썬](https://wikidocs.net/book/1)] [[파이썬 코딩도장](https://dojang.io/course/view.php?id=7)]
   * 딥러닝 프레임워크: PyTorch 1.2 | [[홈페이지]([https://pytorch.org](https://pytorch.org/))]
-  * 환경: Google Colab | [[홈페이지](https://colab.research.google.com/notebooks/welcome.ipynb)] [사용법]
+  * 환경: Google Colab | [[홈페이지](https://colab.research.google.com/notebooks/welcome.ipynb)] [[사용법](https://drive.google.com/open?id=11B7cjkW0KVMZv-yqxHDhg0TUE3CESYSx)]
 
 <br>
 
@@ -14,7 +14,7 @@
 
 ### 1. Basics
 
-* PyTorch 개론 (+Google Colab 사용법)
+* [PyTorch 개론 (+Google Colab 사용법)](
 * Fully Connected Layer - 간단한 Classification 모델 만들기 (XOR)
 * Fully Connected Layer - Multi-class Classification 모델 만들기 (MNIST)
 * Fully Connected Layer - 간단한 Regression 모델 만들기 (Boston Housing Price)

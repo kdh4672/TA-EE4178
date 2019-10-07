@@ -1,0 +1,29 @@
+## PyTorch 개론 (+Google Colab 사용법)
+
+### 0. Basic Python
+
+###### 0.1 자료형
+
+###### 0.2 제어문
+
+<br>
+
+### 1. PyTorch
+
+##### 1.1 Tensors / Numpy
+
+1. Tensors / Numpy
+   * Tensors
+   * Numpy
+   * Tensors to Numpy / Numpy to Tensors
+2. Tensors 연산
+
+##### 1.2 PyTorch Project 구조
+
+1. Load Data
+2. Define Model
+3. Set Loss & Optimizer
+4. Train
+5. Save & Visualization
+
+<br>
