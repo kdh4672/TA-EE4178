@@ -8,9 +8,7 @@ Introduction to Artificial Intelligence(Deep Learning)
   * 딥러닝 프레임워크: PyTorch 1.2 | [[홈페이지]([https://pytorch.org](https://pytorch.org/))]
   * 환경: Google Colab | [[홈페이지](https://colab.research.google.com/notebooks/welcome.ipynb)] [사용법]
 
-
-
-
+<br>
 
 ## Table of Contents
 
