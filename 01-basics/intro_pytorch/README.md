@@ -27,3 +27,8 @@
 5. Save & Visualization
 
 <br>
+
+### cf. Google Colab
+
+[사용법](https://drive.google.com/file/d/11B7cjkW0KVMZv-yqxHDhg0TUE3CESYSx/view)
+
