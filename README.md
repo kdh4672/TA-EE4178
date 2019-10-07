@@ -1,6 +1,6 @@
 ## EE 4178 (2019 Fall)
 
-Introduction to Artificial Intelligence(Deep Learning)
+인공지능(딥러닝) 개론
 
 * 교재: [Deep Learning with Python - Francois Chollet](https://www.pdfdrive.com/deep-learning-with-python-e54511249.html)
 * 실습환경:
