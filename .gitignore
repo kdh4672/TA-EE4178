@@ -1,5 +1,5 @@
 shared
-shared/*
 ing
-ing/*
-.ipynb_checkpoints
+**/.ipynb_checkpoints
+**/datasets
+**/*.ckpt

@@ -4,7 +4,7 @@
 
 * 교재: [Deep Learning with Python - Francois Chollet](https://www.pdfdrive.com/deep-learning-with-python-e54511249.html)
 * 실습환경:
-  * 언어: Python 3.6 (Python 3.5+) | [[점프 투 파이썬](https://wikidocs.net/book/1)] [[파이썬 코딩도장](https://dojang.io/course/view.php?id=7)]
+  * 언어: Python 3.6 (Python 3.5+) | [[점프 투 파이썬](https://wikidocs.net/book/1)] [[Python basic](https://wikidocs.net/book/1553)] [[파이썬 코딩도장](https://dojang.io/course/view.php?id=7)]
   * 딥러닝 프레임워크: PyTorch 1.2 | [[홈페이지](https://pytorch.org(https://pytorch.org/))]
   * 환경: Google Colab | [[홈페이지](https://colab.research.google.com/notebooks/welcome.ipynb)] [[사용법](https://drive.google.com/open?id=11B7cjkW0KVMZv-yqxHDhg0TUE3CESYSx)]
 
