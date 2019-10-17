@@ -29,3 +29,21 @@
 
 
 
+<!---
+https://hackernoon.com/binary-face-classifier-using-pytorch-2d835ccb7816
+https://m.blog.naver.com/PostView.nhn?blogId=gkvmsp&logNo=221485860027&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+
+3. Advanced
+
+- Custom Dataloader
+- Paper Implementation
+- Custom Modeling
+
+cf. Training Tips
+
+- Train-Val-Test / Overfitting-Underfitting
+- Pre-trained Model Fine-Tuning
+- Data Augmentation
+
+--->
+
