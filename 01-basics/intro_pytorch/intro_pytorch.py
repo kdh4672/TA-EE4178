@@ -47,7 +47,6 @@ model = Net()
 # ================================================================== #
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
-optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
 
 # ================================================================== #
 #                        5. Train / Test
