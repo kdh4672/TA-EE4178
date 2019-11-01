@@ -69,7 +69,7 @@ with torch.no_grad():
     print("Final results:")
     for input, target in zip(train_data, targets):
         output = model(input)
-        print("Input: {:4f} | Output: {:4f} | Target: {}".format(input.data[0], output.data[0], target.data[0]))
+        print("Input: {} | Output: {:4f} | Target: {}".format(input.data, output.data[0], target.data[0]))
     
 
 # ================================================================== #
