@@ -18,7 +18,7 @@
 * [Fully Connected Layer - Binary Classification 모델 만들기 (XOR)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/binary_classification-xor.py)] | [IMDB] | [Face Recognizer]
 * [Fully Connected Layer - Multi-class Classification 모델 만들기 (MNIST)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb#border1) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/multiclass_classification-mnist.py)]
 * Fully Connected Layer - Linear Regression 모델 만들기 (Boston Housing Price)
-* Fully Connected Layer - Log Regression 모델 만들기 (MNIST)
+* Fully Connected Layer - Log Regression 모델 만들기
 
 ### 2. Intermediate
 
