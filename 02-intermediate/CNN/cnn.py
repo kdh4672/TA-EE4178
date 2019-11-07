@@ -15,7 +15,7 @@ in_channel = 1
 batch_size = 1
 shuffle = False
 max_pool_kernel = 2
-learning_rate = 0.01
+learning_rate = 0.001
 num_epochs = 5
 
 
@@ -41,12 +41,36 @@ train_loader = torch.utils.data.DataLoader(dataset=train_data,
 
 test_loader = torch.utils.data.DataLoader(dataset=test_data,
                                           batch_size=batch_size,
-                                          shuffle=False)
+                                          shuffle=True)
 
 
 # ================================================================== #
 #                        3. Define Model
 # ================================================================== #
+#class ConvNet(nn.Module):
+#    def __init__(self, num_classes=10):
+#        super(ConvNet, self).__init__()
+#        self.layer1 = nn.Sequential(
+#                nn.Conv2d(in_channel, 16, 5, stride=1, padding=2),
+#                nn.BatchNorm2d(16),
+#                nn.ReLU(),
+#                nn.MaxPool2d(max_pool_kernel))
+#        self.layer2 = nn.Sequential(
+#                nn.Conv2d(16, 32, 5, stride=1, padding=2),
+#                nn.BatchNorm2d(32),
+#                nn.ReLU(),
+#                nn.MaxPool2d(max_pool_kernel))
+#        self.fc1 = nn.Linear(7*7*32, 120)
+#        self.fc2 = nn.Linear(120, num_classes)
+#
+#    def forward(self, x):
+#        x = self.layer1(x)
+#        x = self.layer2(x)
+#        x = x.reshape(x.size(0), -1)
+#        x = self.fc1(x)
+#        x = self.fc2(x)
+#        return x
+
 class ConvNet(nn.Module):
     def __init__(self, num_classes=10):
         super(ConvNet, self).__init__()
@@ -55,20 +79,12 @@ class ConvNet(nn.Module):
                 nn.BatchNorm2d(16),
                 nn.ReLU(),
                 nn.MaxPool2d(max_pool_kernel))
-        self.layer2 = nn.Sequential(
-                nn.Conv2d(16, 32, 5, stride=1, padding=2),
-                nn.BatchNorm2d(32),
-                nn.ReLU(),
-                nn.MaxPool2d(max_pool_kernel))
-        self.fc1 = nn.Linear(7*7*32, 120)
-        self.fc2 = nn.Linear(120, num_classes)
+        self.fc1 = nn.Linear(14*14*16, num_classes)
 
     def forward(self, x):
         x = self.layer1(x)
-        x = self.layer2(x)
         x = x.reshape(x.size(0), -1)
         x = self.fc1(x)
-        x = self.fc2(x)
         return x
 
 model = ConvNet(num_classes).to(device)
@@ -101,8 +117,16 @@ for epoch in range(num_epochs):
         optimizer.step()
 
         # Print Loss for Tracking Training
-        if (i+1) % 100 == 0:
-            print ('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, i+1, total_step, loss.item()))
+        if (i+1) % 1000 == 0:
+            print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, i+1, total_step, loss.item()))
+            test_image, test_label = next(iter(test_loader))
+            _, test_predicted = torch.max(model(test_image.to(device)).data, 1)
+            print('Testing data: [Predicted: {} / Real: {}]'.format(test_predicted, test_label))
+
+    if epoch+1 == num_epochs:
+        torch.save(model.state_dict(), 'model.pth')
+    else:
+        torch.save(model.state_dict(), 'model-{:02d}_epochs.pth'.format(epoch+1))
 
 # Test after Training is done
 model.eval() # Set model to Evaluation Mode (Batchnorm uses moving mean/var instead of mini-batch mean/var)
