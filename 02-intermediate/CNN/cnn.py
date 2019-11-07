@@ -47,30 +47,6 @@ test_loader = torch.utils.data.DataLoader(dataset=test_data,
 # ================================================================== #
 #                        3. Define Model
 # ================================================================== #
-#class ConvNet(nn.Module):
-#    def __init__(self, num_classes=10):
-#        super(ConvNet, self).__init__()
-#        self.layer1 = nn.Sequential(
-#                nn.Conv2d(in_channel, 16, 5, stride=1, padding=2),
-#                nn.BatchNorm2d(16),
-#                nn.ReLU(),
-#                nn.MaxPool2d(max_pool_kernel))
-#        self.layer2 = nn.Sequential(
-#                nn.Conv2d(16, 32, 5, stride=1, padding=2),
-#                nn.BatchNorm2d(32),
-#                nn.ReLU(),
-#                nn.MaxPool2d(max_pool_kernel))
-#        self.fc1 = nn.Linear(7*7*32, 120)
-#        self.fc2 = nn.Linear(120, num_classes)
-#
-#    def forward(self, x):
-#        x = self.layer1(x)
-#        x = self.layer2(x)
-#        x = x.reshape(x.size(0), -1)
-#        x = self.fc1(x)
-#        x = self.fc2(x)
-#        return x
-
 class ConvNet(nn.Module):
     def __init__(self, num_classes=10):
         super(ConvNet, self).__init__()
@@ -79,13 +55,37 @@ class ConvNet(nn.Module):
                 nn.BatchNorm2d(16),
                 nn.ReLU(),
                 nn.MaxPool2d(max_pool_kernel))
-        self.fc1 = nn.Linear(14*14*16, num_classes)
+        self.layer2 = nn.Sequential(
+                nn.Conv2d(16, 32, 5, stride=1, padding=2),
+                nn.BatchNorm2d(32),
+                nn.ReLU(),
+                nn.MaxPool2d(max_pool_kernel))
+        self.fc1 = nn.Linear(7*7*32, 120)
+        self.fc2 = nn.Linear(120, num_classes)
 
     def forward(self, x):
         x = self.layer1(x)
+        x = self.layer2(x)
         x = x.reshape(x.size(0), -1)
         x = self.fc1(x)
+        x = self.fc2(x)
         return x
+
+#class ConvNet(nn.Module):
+#    def __init__(self, num_classes=10):
+#        super(ConvNet, self).__init__()
+#        self.layer1 = nn.Sequential(
+#                nn.Conv2d(in_channel, 16, 5, stride=1, padding=2),
+#                nn.BatchNorm2d(16),
+#                nn.ReLU(),
+#                nn.MaxPool2d(max_pool_kernel))
+#        self.fc1 = nn.Linear(14*14*16, num_classes)
+#
+#    def forward(self, x):
+#        x = self.layer1(x)
+#        x = x.reshape(x.size(0), -1)
+#        x = self.fc1(x)
+#        return x
 
 model = ConvNet(num_classes).to(device)
 
