@@ -109,4 +109,4 @@ with torch.no_grad():
 # ================================================================== #
 #                        6. Save & Visualization
 # ================================================================== #
-torch.save(model.state_dict(), 'model.ckpt')
+torch.save(model.state_dict(), 'model.pth')

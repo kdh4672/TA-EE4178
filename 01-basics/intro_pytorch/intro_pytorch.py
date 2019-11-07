@@ -67,5 +67,5 @@ for epoch in range(epochs):
 # ================================================================== #
 #                        6. Save & Visualization
 # ================================================================== #
-torch.save(model.state_dict(), 'model.ckpt')
+torch.save(model.state_dict(), 'model.pth')
 

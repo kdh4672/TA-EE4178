@@ -3,6 +3,7 @@ ing
 **/.ipynb_checkpoints
 **/datasets
 **/*.ckpt
+**/*.pth
 **/.DS_Store
 .DS_Store
 datasets/*/*
