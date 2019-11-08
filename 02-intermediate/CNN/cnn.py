@@ -100,46 +100,47 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 # ================================================================== #
 #                        5. Train / Test
 # ================================================================== #
-total_step = len(train_loader)
-for epoch in range(num_epochs):
-    for i, (images, labels) in enumerate(train_loader):
-        # Assign Tensors to Configured Device
-        images = images.to(device)
-        labels = labels.to(device)
+if __name__ == '__main__':
+    total_step = len(train_loader)
+    for epoch in range(num_epochs):
+        for i, (images, labels) in enumerate(train_loader):
+            # Assign Tensors to Configured Device
+            images = images.to(device)
+            labels = labels.to(device)
 
-        # Forward Propagation
-        outputs = model(images)
+            # Forward Propagation
+            outputs = model(images)
 
-        # Get Loss, Compute Gradient, Update Parameters
-        loss = criterion(outputs, labels)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+            # Get Loss, Compute Gradient, Update Parameters
+            loss = criterion(outputs, labels)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-        # Print Loss for Tracking Training
-        if (i+1) % 100 == 0:
-            print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, i+1, total_step, loss.item()))
-            test_image, test_label = next(iter(test_loader))
-            _, test_predicted = torch.max(model(test_image.to(device)).data, 1)
-            print('Testing data: [Predicted: {} / Real: {}]'.format(test_predicted, test_label))
+            # Print Loss for Tracking Training
+            if (i+1) % 100 == 0:
+                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, i+1, total_step, loss.item()))
+                test_image, test_label = next(iter(test_loader))
+                _, test_predicted = torch.max(model(test_image.to(device)).data, 1)
+                print('Testing data: [Predicted: {} / Real: {}]'.format(test_predicted, test_label))
 
-    if epoch+1 == num_epochs:
-        torch.save(model.state_dict(), 'model.pth')
-    else:
-        torch.save(model.state_dict(), 'model-{:02d}_epochs.pth'.format(epoch+1))
+        if epoch+1 == num_epochs:
+            torch.save(model.state_dict(), 'model.pth')
+        else:
+            torch.save(model.state_dict(), 'model-{:02d}_epochs.pth'.format(epoch+1))
 
-# Test after Training is done
-model.eval() # Set model to Evaluation Mode (Batchnorm uses moving mean/var instead of mini-batch mean/var)
-with torch.no_grad():
-    correct = 0
-    total = 0
-    for images, labels in test_loader:
-        images = images.to(device)
-        labels = labels.to(device)
-        outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
-        total += labels.size(0)
-        correct += (predicted == labels).sum().item()
+    # Test after Training is done
+    model.eval() # Set model to Evaluation Mode (Batchnorm uses moving mean/var instead of mini-batch mean/var)
+    with torch.no_grad():
+        correct = 0
+        total = 0
+        for images, labels in test_loader:
+            images = images.to(device)
+            labels = labels.to(device)
+            outputs = model(images)
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
 
-    print('Accuracy of the network on the {} test images: {} %'.format(len(test_loader)*batch_size, 100 * correct / total))
+        print('Accuracy of the network on the {} test images: {} %'.format(len(test_loader)*batch_size, 100 * correct / total))
 
