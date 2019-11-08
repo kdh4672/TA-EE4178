@@ -22,7 +22,7 @@
 
 ### 2. Intermediate
 
-* [CNN(Convolutional Neural Network)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.ipynb) - [[Full Code - Train](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.py) / [Full Code - Test](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/test.py)]
+* [CNN(Convolutional Neural Network)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.ipynb?flush_cache=true) - [[Full Code - Train](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.py) / [Full Code - Test](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/test.py)]
 * RNN(Recurrent Neural Network)
 * VAE(Varialtional Auto-Encoder)
 * GAN(Generative Adversarial Networks)
