@@ -79,7 +79,7 @@ class ConvNet(nn.Module):
 #                nn.BatchNorm2d(16),
 #                nn.ReLU(),
 #                nn.MaxPool2d(2))
-#        self.fc1 = F.sotmax(nn.Linear(14*14*16, num_classes))
+#        self.fc1 = nn.Linear(14*14*16, num_classes)
 #
 #    def forward(self, x):
 #        x = self.layer1(x)
