@@ -22,7 +22,7 @@ def plt_manifold(trained_model_instance, save_file_path, mean_range=3, n=20, fig
     return
 
 """ 적용 예시
-save_file_path = "./MNIST_manifold.png"
+save_file_path = "./mnist_manifold.png"
 
 with torch.no_grad():
     plt_manifold(model, save_file_path)
