@@ -46,10 +46,10 @@ if __name__ == '__main__':
     #                        2. Define Dataloader
     # ================================================================== #
     train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                                  batch_size=1)
+                                               batch_size=1)
 
     val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
-                                                  batch_size=1)
+                                             batch_size=1)
 
     
     image, label = next(iter(train_dataset))
