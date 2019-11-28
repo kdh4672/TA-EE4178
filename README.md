@@ -22,7 +22,7 @@
 
 ### 2. Intermediate
 
-* [CNN(Convolutional Neural Network)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.ipynb?flush_cache=true) (MNIST) - [[Full Code - Train](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.py) / [Full Code - Test](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/test.py)] | [CIFAR-10](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cifar10.py)
+* [CNN(Convolutional Neural Network) (MNIST)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.ipynb?flush_cache=true) - [[Full Code - Train](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cnn.py) / [Full Code - Test](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/test.py)] | [[CIFAR-10](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/CNN/cifar10.py)]
 * RNN(Recurrent Neural Network)
 * Stytle Transfer
 * [VAE(Varialtional Auto-Encoder)](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/VAE/VAE.ipynb) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/02-intermediate/VAE/train.py)]
