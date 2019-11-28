@@ -36,14 +36,21 @@ if __name__ == '__main__':
     train_dir = './npy_train'
     val_dir = './npy_val'
 
+    # ================================================================== #
+    #                        1. Load Data
+    # ================================================================== #
     train_dataset = FontDataset(train_dir)
     val_dataset = FontDataset(val_dir)
 
+    # ================================================================== #
+    #                        2. Define Dataloader
+    # ================================================================== #
     train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
                                                   batch_size=1)
 
     val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
                                                   batch_size=1)
 
+    
     image, label = next(iter(train_dataset))
     print(len(train_loader))
