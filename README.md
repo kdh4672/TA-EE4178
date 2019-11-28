@@ -49,3 +49,7 @@ cf. Training Tips
 
 --->
 
+## Final Project
+1. [프로젝트개요]()
+2. 데이터셋 - [[train]()] / [[validation]()]
+3. [데이터 로드를 위한 참고 코드]()
