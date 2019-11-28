@@ -52,4 +52,4 @@ cf. Training Tips
 ## Final Project
 1. [프로젝트개요](https://drive.google.com/open?id=1-WzZ5Bftb8UlLA1HLZU1jxEtjjB-ZB2_)
 2. 데이터셋 - [[train](https://drive.google.com/open?id=1Gx-1Gj3YLR7r4kYIMDJMnF1GtKYPMvbQ)] / [[validation](https://drive.google.com/open?id=1T8KSOgAVpKsJFWgNMeVfLgTnKQSp1VeB)]
-3. [데이터 로드를 위한 참고 코드]()
+3. [데이터 로드를 위한 참고 코드](https://github.com/gamchanr/TA-EE4178/blob/master/shared/font_dataset.py)
