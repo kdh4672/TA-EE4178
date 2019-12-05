@@ -4,6 +4,7 @@ ing
 **/datasets
 **/*.ckpt
 **/*.pth
+**/*.pptx
 **/.DS_Store
 .DS_Store
 datasets/*/*
