@@ -32,16 +32,16 @@
 ### 3. Advanced
 * [Custom Dataloader](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/custom_dataloader/custom_dataloader.ipynb) | [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/custom_dataloader/font_dataset.py)]
 * [Trasfer Learning (Using Pre-trained Model to Custom Case)](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/transfer_learning.ipynb) - [[Full code](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/post_train.py)] | [[custom data](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/cnn.py)] | [[pre-trained model](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/cnn.py)] 
+* Model Customizing base on Existing Model
+  
+### 4. Experts
+* Paper Implemention  
+* Custom Modeling
+* Pytorch for Mobile [ios / android]
 
 <!---
 https://hackernoon.com/binary-face-classifier-using-pytorch-2d835ccb7816
 https://m.blog.naver.com/PostView.nhn?blogId=gkvmsp&logNo=221485860027&proxyReferer=https%3A%2F%2Fwww.google.com%2F
-
-
-- Custom Dataloader
-- Paper Implementation
-- Custom Modeling
-- PyTorch for mobile
 
 cf. Training Tips
 
