@@ -64,9 +64,9 @@ class RNN(nn.Module):
         
         # Forward propagate LSTM
         out, _ = self.lstm(x, (h0, c0))  # out: tensor of shape (batch_size, seq_length, hidden_size)
-        
+         
         # Decode the hidden state of the last time step
-        out = self.fc(out[:, -1, :])
+        out = self.fc(out[:, -1, :]) # [1, 128] [128 10] [1 10]
         return out
     
 model = RNN(input_size, hidden_size, num_layers, num_classes).to(device)

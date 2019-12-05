@@ -15,10 +15,10 @@
 ### 1. Basics
 
 * [PyTorch 개론 (+Google Colab 사용법)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/intro_pytorch/intro_pytorch.ipynb) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/intro_pytorch/intro_pytorch.py)]
-* [Fully Connected Layer - Binary Classification 모델 만들기 (XOR)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/binary_classification-xor.py)] | [IMDB] | [Face Recognizer]
-* [Fully Connected Layer - Multi-class Classification 모델 만들기 (MNIST)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb#border1) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/multiclass_classification-mnist.py)]
-* Fully Connected Layer - Linear Regression 모델 만들기 (Boston Housing Price)
-* Fully Connected Layer - Log Regression 모델 만들기
+* [Binary Classification 모델 만들기 (XOR)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/binary_classification-xor.py)] | [IMDB] | [Face Recognizer]
+* [Multi-class Classification 모델 만들기 (MNIST)](https://nbviewer.jupyter.org/github/gamchanr/TA-EE4178/blob/master/01-basics/classification/classification.ipynb#border1) - [[Full Code](https://github.com/gamchanr/TA-EE4178/blob/master/01-basics/classification/multiclass_classification-mnist.py)]
+* Linear Regression 모델 만들기 (Boston Housing Price)
+* Log Regression 모델 만들기
 
 ### 2. Intermediate
 
@@ -29,12 +29,14 @@
 * GAN(Generative Adversarial Networks)
 
 
+### 3. Advanced
+* Custom Dataloader  
+* [Trasfer Learning (Using Pre-trained Model to Custom Case)]()
 
 <!---
 https://hackernoon.com/binary-face-classifier-using-pytorch-2d835ccb7816
 https://m.blog.naver.com/PostView.nhn?blogId=gkvmsp&logNo=221485860027&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 
-3. Advanced
 
 - Custom Dataloader
 - Paper Implementation
@@ -44,7 +46,6 @@ https://m.blog.naver.com/PostView.nhn?blogId=gkvmsp&logNo=221485860027&proxyRefe
 cf. Training Tips
 
 - Train-Val-Test / Overfitting-Underfitting
-- Pre-trained Model Fine-Tuning
 - Data Augmentation
 
 --->
