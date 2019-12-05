@@ -31,7 +31,7 @@
 
 ### 3. Advanced
 * Custom Dataloader  
-* [Trasfer Learning (Using Pre-trained Model to Custom Case)]()
+* [Trasfer Learning (Using Pre-trained Model to Custom Case)](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/transfer_learning.ipynb) - [[Full code](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/post_train.py)] | [[custom data](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/cnn.py)] | [[pre-trained model](https://github.com/gamchanr/TA-EE4178/blob/master/03-advanced/transfer_learning/cnn.py)] 
 
 <!---
 https://hackernoon.com/binary-face-classifier-using-pytorch-2d835ccb7816
