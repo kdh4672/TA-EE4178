@@ -3,9 +3,10 @@ import torch
 import os
 import glob
 from torchvision import transforms
+from torch.utils.data import Dataset
 
 
-class FontDataset():
+class FontDataset(Dataset):
     def __init__(self, npy_dir, max_dataset_size=float("inf")):
         npy_dir = os.path.abspath(npy_dir)
         self.to_tensor = transforms.ToTensor()
