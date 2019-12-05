@@ -27,3 +27,28 @@ class FontDataset(Dataset):
 
     def __len__(self):
         return len(self.entry)
+    
+if __name__ == '__main__':
+    train_dir = '~/datasets/font/npy_train'.replace('~', os.path.expanduser('~'))
+    val_dir = '~/datasets/font/npy_val'.replace('~', os.path.expanduser('~'))
+
+    # ================================================================== #
+    #                        1. Load Data
+    # ================================================================== #
+    train_dataset = FontDataset(train_dir)
+    val_dataset = FontDataset(val_dir)
+
+    # ================================================================== #
+    #                        2. Define Dataloader
+    # ================================================================== #
+    train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                               batch_size=1)
+
+    val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
+                                             batch_size=1)
+
+    
+    image, label = next(iter(train_dataset))
+    print(len(train_loader))
+    image, label = next(iter(train_dataset))
+    print(len(val_loader))
