@@ -60,7 +60,7 @@ cf. Training Tips
 ## 프로젝트 추가공지 (GPU환경 확인 및 실행 시간 출력)
 * Colab에서 제공되는 GPU종류가 총 5종류(NVIDIA Tesla K80, P100, P4, T4, V100 GPU)로 확장되었고, 임의로 지정할 수 없으며 세션이 연결될 시 랜덤으로 배정되는 것으로 확인됩니다. 이에 따라 GPU 동작시간에 차이가 발생할 수 있습니다.   
 * 현재 할당된 GPU가 아닌 다른 GPU를 할당받고 싶으신 경우, 세션을 끊었다가 다시 연결하면 변경되는 경우가 있습니다. (배정되는 GPU를 그냥 사용하실 분은 그대로 진행하시면 됩니다.)  
-* <u>**train.ipynb 제출 시 아래 두 코드도 추가하여, 보고서에 '어떤 환경에서 소요시간이 얼마인지' 함께 기재해 주시기 바랍니다.**</u>
+* <u>**train.ipynb 제출 시 아래 두 코드도 추가하여, 보고서에 '어떤 환경에서 소요시간이 얼마인지(ex. Tesla T4 환경에서 2.003초)' 함께 기재해 주시기 바랍니다.**</u>
 1. GPU 환경 확인 (Colab GPU: NVIDIA Tesla K80, P100, P4, T4, V100 GPU 중 실행됨): `!nvidia-smi`  
 <img src="./shared/pj_gpu.png" alt="Drawing" style="width: 800px;" align="left"/>  <br>
 2. 코드 실행 시간 출력  
