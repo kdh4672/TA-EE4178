@@ -10,4 +10,5 @@ ing
 datasets/*/*
 data/*/*
 results
+**/results
 **/ttf-to-jpg

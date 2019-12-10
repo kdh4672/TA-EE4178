@@ -56,3 +56,19 @@ cf. Training Tips
 1. [프로젝트개요](https://drive.google.com/open?id=1VYOuNUQQynr9hX2WcEqzAGGCBl5vukRH)
 2. 데이터셋 - [[train](https://drive.google.com/open?id=1Gx-1Gj3YLR7r4kYIMDJMnF1GtKYPMvbQ)] / [[validation](https://drive.google.com/open?id=1T8KSOgAVpKsJFWgNMeVfLgTnKQSp1VeB)]
 3. [데이터 로드를 위한 참고 코드 (font_dataset.py)](https://github.com/gamchanr/TA-EE4178/blob/master/utils/font_dataset.py)
+
+> cf. GPU 환경 확인 및 실행 시간 출력  
+> 1. GPU 환경 확인 (Colab GPU: NVIDIA Tesla K80, P100, P4, T4, V100 GPU 중 실행됨): `!nvidia-smi`  
+> 2. 코드 실행 시간 출력
+>```  
+>import time  
+>   
+>start_time = time.time()  
+>          
+>### 학습코드 예시  
+>time.sleep(2)  
+>###  
+>  
+>duration = time.time() - start_time  
+>print(duration) # 2.003 (초)가 출력됨
+>```
