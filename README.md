@@ -64,15 +64,15 @@ cf. Training Tips
 1. GPU 환경 확인 (Colab GPU: NVIDIA Tesla K80, P100, P4, T4, V100 GPU 중 실행됨): `!nvidia-smi`  
 <img src="./shared/pj_gpu.png" alt="Drawing" style="width: 800px;" align="left"/>  <br>
 2. 코드 실행 시간 출력  
-```  
-import time  
-   
-start_time = time.time()  
-          
-### 학습코드 예시  
-time.sleep(2)  
-###  
-  
-duration = time.time() - start_time  
-print(duration) # 2.003 (초)가 출력됨
-```
+  ```  
+  import time  
+     
+  start_time = time.time()  
+            
+  ### 학습코드 예시  
+  time.sleep(2)  
+  ###  
+    
+  duration = time.time() - start_time  
+  print(duration) # 2.003 (초)가 출력됨
+  ```
